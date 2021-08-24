@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MoodAnalysesWithCore
+{
+    public class MoodAnalyser
+    {
+        public string message;
+        /// <summary>
+        /// Parameterised Constructor
+        /// </summary>
+        /// <param name="message"></param>
+        /// 
+
+
+        public MoodAnalyser()
+        { }
+        public MoodAnalyser(string message)
+        {
+            this.message = message;
+        }
+        public string AnalyserMethod()
+        {
+            try
+            {
+                if (this.message.Equals(string.Empty))
+                    throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.EMPTY_MESSAGE, "mood should not be empty");
+                if (this.message.Contains("sad"))
+                    return "SAD";
+                else
+                    return "HAPPY";
+            }
+            catch (NullReferenceException)
+            {
+                throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NULL_MESSAGE, "mood should not be null");
+            }
+        }
+    }
+}

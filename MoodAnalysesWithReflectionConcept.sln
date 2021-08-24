@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodAnalysesWithReflectionConcept", "MoodAnalysesWithReflectionConcept\MoodAnalysesWithReflectionConcept.csproj", "{6AC80BB7-7FB4-481A-A383-05DE762D75ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodAnalysesMsTest", "MoodAnalysesMsTest\MoodAnalysesMsTest.csproj", "{4976BA05-616E-4548-BC5F-E542611CCF82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AC80BB7-7FB4-481A-A383-05DE762D75ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC80BB7-7FB4-481A-A383-05DE762D75ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC80BB7-7FB4-481A-A383-05DE762D75ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC80BB7-7FB4-481A-A383-05DE762D75ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4976BA05-616E-4548-BC5F-E542611CCF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4976BA05-616E-4548-BC5F-E542611CCF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4976BA05-616E-4548-BC5F-E542611CCF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4976BA05-616E-4548-BC5F-E542611CCF82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C8028ED-D1BA-4636-86FF-38CB78228935}
+	EndGlobalSection
+EndGlobal
