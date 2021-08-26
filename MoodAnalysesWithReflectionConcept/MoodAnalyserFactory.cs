@@ -57,9 +57,28 @@ public static object CreateMoodAnalyseUsingParameterizedConstructor(string class
             else
             {
                 throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NO_SUCH_METHOD, "Constructor is Not Found");
-                }
             }
-
         }
+
+
+
+        public string InvokeMethod(string methodName, string message)
+        {
+            try
+            {
+                Type type = typeof(MoodAnalyser);
+                MethodInfo method = type.GetMethod(methodName);
+
+                object MoodAnalyserFactoryObject = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser", "MoodAnalyser", "Happy");
+                object MethodObject = method.Invoke(MoodAnalyserFactoryObject, null);
+                return MethodObject.ToString();
+            }
+            catch (NullReferenceException e)
+            {
+                throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NO_SUCH_METHOD, "No such Method");
+            }
+        }
+
     }
+}
 
