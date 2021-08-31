@@ -152,16 +152,6 @@ namespace MoodAnalyzerCheck
                 throw new Exception(e.Message);
             }
             Assert.AreEqual(expected, actual);
-        }
-
-
-
-
-
-
-
-
+            }
     }
-
-
 }
